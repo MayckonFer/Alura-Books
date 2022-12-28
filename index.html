@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta metacharset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBooks</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <h1><img src="imagens/Logo-1.png" /></h1>
+      </div>
+    </header>
+
+    <img
+      class="banner"
+      src="imagens/Banner-1.png"
+      alt="Melhores livros de Programação, encontre em nossa estante o que precisa para seu desenvolvimento!"
+    />
+    <nav>
+      <div class="wrap">
+        <ul class="nav">
+          <li>
+            <button
+              class="btn btn-front"
+              href="#"
+              id="btnFiltrarLivrosFront"
+              value="front-end"
+            >
+              LIVROS DE FRONT-END
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-back"
+              href="#"
+              id="btnFiltrarLivrosBack"
+              value="back-end"
+            >
+              LIVROS DE BACK-END
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-dados"
+              href="#"
+              id="btnFiltrarLivrosDados"
+              value="dados"
+            >
+              LIVROS DE DADOS
+            </button>
+          </li>
+          <li>
+            <button
+              class="btn btn-disponiveis"
+              href="#"
+              id="btnLivrosDisponiveis"
+              value="disponivel"
+            >
+              LIVROS DISPONÍVEIS
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">
+              ORDENAR POR PREÇO
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrap">
+      <section class="livros" id="livros"></section>
+    </div>
+
+    <section class="wrap" id="valor_total_livros_disponiveis"></section>
+
+    <footer class="rodape">
+      <div class="wrap">
+        <p>Alura - Mergulhe em tecnologia</p>
+      </div>
+    </footer>
+
+    <script src="./app/main.js"></script>
+    <script src="./app/forEach.js"></script>
+    <script src="./app/map.js"></script>
+    <script src="./app/filter.js"></script>
+    <script src="./app/sort.js"></script>
+    <script src="./app/reduce.js"></script>
+  </body>
+</html>
